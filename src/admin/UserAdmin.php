@@ -138,7 +138,7 @@ class UserAdmin extends Admin
 			$input['password'] = Hash::make($input['password']);
 		}
 
-		User::create($input);
+		return User::create($input);
 	}
 
 	/**
