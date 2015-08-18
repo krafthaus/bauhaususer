@@ -52,6 +52,9 @@ return [
 			],
 			'groups' => [
 				'label' => 'Groups'
+			],
+			'status' => [
+				'label' => 'Status'
 			]
 		],
 		'filter' => [
