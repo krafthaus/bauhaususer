@@ -78,6 +78,13 @@ class UserAdmin extends Admin
 			$mapper->password('password_confirmation')
 				->label(trans('bauhaususer::admin.users.form.password-confirm.label'))
 				->placeholder(trans('bauhaususer::admin.users.form.password-confirm.placeholder'));
+
+			$mapper->select('is_active')
+				->label(trans('bauhaususer::admin.users.form.status.label'))
+				->options( [
+					0 => "Inactive",
+					1 => "Active"
+				] );
 		});
 
 		$mapper->tab(trans('bauhaususer::admin.users.form.tabs.info'), function ($mapper) {
